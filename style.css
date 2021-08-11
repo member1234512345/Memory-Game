@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.control-btns{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(8 80 60 / 80%);
+    z-index: 2;
+}
+
+.control-btns span{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   padding: 10px;
+   background-color: snow;
+   color: rgb(15, 7, 7);
+   font-size: 30px;
+   border-radius: 10px;
+   border: 2px solid #CCC;
+   cursor: pointer;
+   text-align: center;
+}
+
+.info-container{
+    width: 1080px;
+    margin: 20px auto 0;
+    background-color: #f6f6f6;
+    padding: 20px;
+    overflow: hidden;
+    font-size: 24px;
+    border: 2px solid rgba(126, 9, 34, 0.66);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.memory-game-blocks{
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.memory-game-blocks.no-clicking{
+    pointer-events: none;
+}
+
+.memory-game-blocks .game-block{
+    height: 200px;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    margin: 0 10px 20px;
+    flex: 1 0 200px;
+}
+
+.memory-game-blocks .game-block .front{
+    background-color: #333;
+   
+}
+
+.memory-game-blocks .game-block .front:before {
+    content: "?";
+    color: #FFF;
+    font-size: 140px;
+    font-weight: bold;
+    line-height: 200px;
+}
+
+.memory-game-blocks .game-block .back{
+    background-color: #607d8b;
+    transform: rotateY(180deg);  
+}
+
+.memory-game-blocks .game-block .back img{
+    width: 140px;
+    height: 140px;
+    margin-top: 30px;
+}
+
+.memory-game-blocks .game-block.is-flipped,
+.memory-game-blocks .game-block.has-matched{
+    transform: rotateY(180deg);     
+}
+
+
+
+.memory-game-blocks .game-block .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    border: 5px solid rgba(126, 9, 34, 0.66);;
+}
+

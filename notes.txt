@@ -1,0 +1,11 @@
+pointer-events : none    => no clicking
+
+
+in html data-tech = "something" 
+in js : dataset.tech     ex : dataset.tech
+
+parseInt()      => convert string to integer
+
+to create timer => setIntervel , clearIntervel , min , sec
+
+

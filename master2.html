@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="control-btns">
+        <span>Start Game</span>
+    </div>
+    
+    <div class="info-container">
+        <div class="name">Hello : <span></span> </div>
+        <div id="timer"><span></span></div>
+        <div class="tries">Wrong Tries : <span>0</span> </div>
+    </div>
+
+    <div class="memory-game-blocks">
+
+        <div class="game-block" data-tech="apple">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="fruits/apple1.jpg" alt="apple1" />
+            </div> 
+        </div>
+
+        <div class="game-block" data-tech="apple">
+            <div class="face front">
+                
+            </div>
+            <div class="face back">
+                <img src="fruits/apple2.jpg" alt="apple2" />
+            </div> 
+        </div>
+        
+        <div class="game-block" data-tech="mango">
+            <div class="face front">
+               
+            </div>
+            <div class="face back">
+                <img src="fruits/mango1.jpg" alt="apple2" />
+            </div> 
+        </div>
+
+        <div class="game-block" data-tech="mango">
+            <div class="face front">
+               
+            </div>
+            <div class="face back">
+                <img src="fruits/mango2.jpg" alt="apple2" />
+            </div> 
+        </div>
+
+        <div class="game-block" data-tech="cherry">
+            <div class="face front">
+             
+            </div>
+            <div class="face back">
+                <img src="fruits/cherry2.png" alt="apple2" />
+            </div> 
+        </div>
+
+        <div class="game-block" data-tech="cherry">
+            <div class="face front">
+               
+            </div>
+            <div class="face back">
+                <img src="fruits/cherry2.png" alt="apple2" />
+            </div> 
+        </div>
+
+        <div class="game-block" data-tech="watermelon">
+            <div class="face front">
+                
+            </div>
+            <div class="face back">
+                <img src="fruits/watermelon1.jpeg" alt="apple2" />
+            </div> 
+        </div>
+        
+        <div class="game-block" data-tech="watermelon">
+            <div class="face front">
+               
+            </div>
+            <div class="face back">
+                <img src="fruits/watermelon1.jpeg" alt="apple2" />
+            </div> 
+        </div>
+
+        <div class="game-block" data-tech="grapes">
+            <div class="face front">
+               
+            </div>
+            <div class="face back">
+                <img src="fruits/grapes1.jpeg" alt="apple2" />
+            </div> 
+        </div>
+
+        <div class="game-block" data-tech="grapes">
+            <div class="face front">
+                
+            </div>
+            <div class="face back">
+                <img src="fruits/grapes2.jpeg" alt="apple2" />
+            </div> 
+        </div>
+
+        <div class="game-block" data-tech="apple">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="fruits/apple1.jpg" alt="apple1" />
+            </div> 
+        </div>
+
+        <div class="game-block" data-tech="apple">
+            <div class="face front">
+                
+            </div>
+            <div class="face back">
+                <img src="fruits/apple2.jpg" alt="apple2" />
+            </div> 
+        </div>
+        
+        <div class="game-block" data-tech="mango">
+            <div class="face front">
+               
+            </div>
+            <div class="face back">
+                <img src="fruits/mango1.jpg" alt="apple2" />
+            </div> 
+        </div>
+
+        <div class="game-block" data-tech="mango">
+            <div class="face front">
+               
+            </div>
+            <div class="face back">
+                <img src="fruits/mango2.jpg" alt="apple2" />
+            </div> 
+        </div>
+
+        <div class="game-block" data-tech="cherry">
+            <div class="face front">
+             
+            </div>
+            <div class="face back">
+                <img src="fruits/cherry2.png" alt="apple2" />
+            </div> 
+        </div>
+
+        <div class="game-block" data-tech="cherry">
+            <div class="face front">
+               
+            </div>
+            <div class="face back">
+                <img src="fruits/cherry2.png" alt="apple2" />
+            </div> 
+        </div>
+
+        <div class="game-block" data-tech="watermelon">
+            <div class="face front">
+                
+            </div>
+            <div class="face back">
+                <img src="fruits/watermelon1.jpeg" alt="apple2" />
+            </div> 
+        </div>
+        
+        <div class="game-block" data-tech="watermelon">
+            <div class="face front">
+               
+            </div>
+            <div class="face back">
+                <img src="fruits/watermelon1.jpeg" alt="apple2" />
+            </div> 
+        </div>
+
+        <div class="game-block" data-tech="grapes">
+            <div class="face front">
+               
+            </div>
+            <div class="face back">
+                <img src="fruits/grapes1.jpeg" alt="apple2" />
+            </div> 
+        </div>
+
+        <div class="game-block" data-tech="grapes">
+            <div class="face front">
+                
+            </div>
+            <div class="face back">
+                <img src="fruits/grapes2.jpeg" alt="apple2" />
+            </div> 
+        </div>
+
+    </div>    
+    
+    <!-- attach audio -->
+    <audio id="success" src="success.mp3" preload="auto"></audio>
+    <audio id="fail" src="fail.mp3" preload="auto"></audio>
+    <audio id="time-is-out" src="timeOut.mp3" preload="auto"></audio>
+
+
+    <script src="javascript.js"></script>
+
+
+</body>
+
+</html>
